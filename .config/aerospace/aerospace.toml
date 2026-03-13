@@ -204,6 +204,11 @@ automatically-unhide-macos-hidden-apps = false
     check-further-callbacks = true
     run = 'layout floating'
 
+[[on-window-detected]]
+    if.app-id = 'com.apple.iphonesimulator'
+    check-further-callbacks = true
+    run = 'layout tiling'
+
 # [[on-window-detected]]
 #     if.app-id = 'com.apple.iphonesimulator'
 #      if.during-aerospace-startup = true
