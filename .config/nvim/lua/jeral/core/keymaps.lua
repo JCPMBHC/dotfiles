@@ -40,5 +40,19 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 keymap.set("n", "<leader>os", "<cmd>:Shades<CR>", { desc = "Open shades color picker" })
 keymap.set("n", "<leader>oh", "<cmd>:Huefy<CR>", { desc = "Open huefy color picker" })
 
+-- Organize and clean imports for TypeScript/TSX/JSX files
+keymap.set("n", "<leader>oi", function()
+  -- First remove unused imports
+  vim.lsp.buf.code_action({
+    context = { only = { "source.removeUnusedImports" } },
+    apply = true,
+  })
+  -- Then organize imports
+  vim.lsp.buf.code_action({
+    context = { only = { "source.organizeImports" } },
+    apply = true,
+  })
+end, { desc = "Organize and clean imports" })
+
 -- Expandir snippet en modo insert
 vim.api.nvim_set_keymap('i', '<C-l>', '<cmd>lua require("luasnip").expand_or_jump()<CR>', { noremap = true, silent = true })
