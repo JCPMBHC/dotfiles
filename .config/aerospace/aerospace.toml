@@ -194,10 +194,10 @@ automatically-unhide-macos-hidden-apps = false
     check-further-callbacks = true
     run = 'layout floating'
 
-[[on-window-detected]]
-    if.app-id = 'com.google.Chrome'
-    check-further-callbacks = true
-    run = 'layout floating'
+# [[on-window-detected]]
+#     if.app-id = 'com.google.Chrome'
+#     check-further-callbacks = true
+#     run = 'layout floating'
 
 [[on-window-detected]]
     if.app-id = 'com.openai.chat'
