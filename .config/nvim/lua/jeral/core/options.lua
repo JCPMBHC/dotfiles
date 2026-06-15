@@ -52,3 +52,9 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- folding
+opt.foldmethod = "expr"
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+opt.foldenable = false  -- no colapsar al abrir archivos
+opt.foldlevel = 99      -- abrir todos los folds por defecto
