@@ -4,7 +4,7 @@ size = 13.0
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
-style = "Regular"
+style = "Light"
 
 # --- COLORES ---
 [colors.primary]
@@ -21,7 +21,7 @@ text = "#ffffff"
 # --- VENTANA, OPACIDAD Y BLUR (Corregido aquí) ---
 [window]
 decorations = "None" 
-opacity = 0.80
+opacity = 0.95
 blur = true 
 
 [window.padding]
