@@ -21,7 +21,7 @@ text = "#ffffff"
 # --- VENTANA, OPACIDAD Y BLUR (Corregido aquí) ---
 [window]
 decorations = "None" 
-opacity = 0.95
+opacity = 0.90
 blur = true 
 
 [window.padding]
