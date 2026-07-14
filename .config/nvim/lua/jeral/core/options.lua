@@ -53,6 +53,12 @@ opt.splitbelow = true -- split horizontal window to the bottom
 -- turn off swapfile
 opt.swapfile = false
 
+-- persistent undo
+local undodir = string.format("%s/.vim/undodir", os.getenv("HOME"))
+vim.fn.mkdir(undodir, "p")
+opt.undofile = true
+opt.undodir = undodir
+
 -- folding
 opt.foldmethod = "expr"
 opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
