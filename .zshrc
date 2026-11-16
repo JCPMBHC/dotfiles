@@ -218,3 +218,6 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Turso
 export PATH="$PATH:/Users/tgum-it30/.turso"
+
+# Added by the Postman CLI installer
+export PATH='/Users/tgum-it30/.local/bin':"$PATH"
